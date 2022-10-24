@@ -13,6 +13,7 @@ import { SocialLoginModule, AuthServiceConfig, GoogleLoginProvider } from 'angul
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { MainRoutingModule } from './main/main.routing';
 
 export function provideConfig() {
   return config;
@@ -45,7 +46,8 @@ export const config = new AuthServiceConfig([
     HttpClientModule,
     MatSnackBarModule,
     OverlayModule,
-    SocialLoginModule
+    SocialLoginModule,
+    MainRoutingModule
   ],
   providers: [    
     UsersManagementService,
